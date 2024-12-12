@@ -1,3 +1,5 @@
+number1 = 10
+number2 = 5
 number1 = int(10)
 number2 = int(5)
 addition = number1 + number2
