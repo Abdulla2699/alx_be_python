@@ -1,4 +1,3 @@
-# define global conversion factors
 fahrenheit_to_celsius_factor = 5 / 9
 celsius_to_fahrenheit_factor = 9 / 5
 
