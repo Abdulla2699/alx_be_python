@@ -6,15 +6,13 @@ def convert_to_celsius(fahrenheit):
     """
     Converts a temperature from Fahrenheit to Celsius.
     """
-    global FAHRENHEIT_TO_CELSIUS_FACTOR
     return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
     """
     Converts a temperature from Celsius to Fahrenheit.
     """
-    global CELSIUS_TO_FAHRENHEIT_FACTOR
-    return celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
+    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
 def main():
     """
