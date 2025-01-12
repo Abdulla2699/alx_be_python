@@ -20,7 +20,7 @@ def main():
     """
     try:
         # Prompt the user for input
-        temperature_input = input("Enter the temperature: ").strip()
+        temperature_input = input("Enter the temperature to convert: ").strip()
         
         # Validate that the input is a numeric value
         try:
@@ -33,10 +33,10 @@ def main():
         # Perform the conversion based on the unit
         if unit == 'C':
             converted_temp = convert_to_fahrenheit(temperature)
-            print(f"{temperature}°C is equal to {converted_temp:.2f}°F")
+            print(f"{temperature:.1f}°C is {converted_temp:.10f}°F")
         elif unit == 'F':
             converted_temp = convert_to_celsius(temperature)
-            print(f"{temperature}°F is equal to {converted_temp:.2f}°C")
+            print(f"{temperature:.1f}°F is {converted_temp:.10f}°C")
         else:
             raise ValueError("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
     except ValueError as e:
