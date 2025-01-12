@@ -1,4 +1,4 @@
-# define global conversion factors
+# Define global conversion factors
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
@@ -12,6 +12,7 @@ def main():
     try:
         temperature_input = input("enter the temperature to convert: ").strip()
         
+        # Validate that the input is a numeric value
         try:
             temperature = float(temperature_input)
         except ValueError:
