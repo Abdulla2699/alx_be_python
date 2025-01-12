@@ -3,10 +3,10 @@ FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
 def convert_to_celsius(f):
-    return (f - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    return (F - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(c):
-    return (c * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
+    return (C * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
 def get_temperature():
     while True:
