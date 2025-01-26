@@ -21,8 +21,7 @@ class PrintBook(Book):
         super().__init__(title, author)
         self.page_count = page_count
 
-    def __str__(self):
-        return
+    def __str__
 # main.py
 
 from library_system import Book, EBook, PrintBook, Library
